@@ -1,8 +1,8 @@
 makeCacheMatrix <- function(x = matrix()) {
   j <- NULL
   set <- function(y){
-  x <<- y
-  j <<- NULL
+  x <<-   ## input x as matrix
+  j <<- NULL ##solved value j to null
   }
   get <- function()x
   setInverse <- function(inverse) j <<- inverse
@@ -13,7 +13,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-
+## Changed mean to solve
 cacheSolve <- function(x, ...) {
 
   j <- x$getInverse()
